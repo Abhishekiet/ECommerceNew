@@ -17,12 +17,14 @@ const App = () => {
   const [ bag, setBag ] = useState([ ])
 
 
-    const collectionFirebase = collection( db , 'Headphone' )
-    const collectionFirebase1 = collection( db , 'Speaker' )
+//    const collectionFirebase = collection( db , 'Headphone' )
+//    const collectionFirebase1 = collection( db , 'Speaker' )
 
 
     useEffect( ()=>{
-
+      const collectionFirebase = collection( db , 'Headphone' )
+      const collectionFirebase1 = collection( db , 'Speaker' )
+  
       const getData= async()=>{
         const data  = await getDocs( collectionFirebase )
         setArrayEarphone( data.docs.map( a=> ({ ...a.data() } ) ) )
