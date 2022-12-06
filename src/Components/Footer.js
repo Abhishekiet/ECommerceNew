@@ -9,7 +9,7 @@ export const Footer = () => {
                 <Box width='30%' sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
                     <Stack>
                         <Typography variant='h5' align='center'> Developed by </Typography> <br />
-                        <Typography variant='h4' align='center'> Sachin Sharma </Typography>
+                        <Typography variant='h4' align='center'> Abhishek Dameria </Typography>
                     </Stack>
                 </Box>
 
